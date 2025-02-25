@@ -1,0 +1,31 @@
+.stApp {
+    max-width: 100%;
+}
+
+.stock-metric-card {
+    background-color: #262730;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.positive-value {
+    color: #00ff7f !important;
+}
+
+.negative-value {
+    color: #ff4b4b !important;
+}
+
+.stock-search {
+    background-color: #262730;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.company-info {
+    background-color: #262730;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
