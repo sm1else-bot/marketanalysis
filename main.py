@@ -48,7 +48,7 @@ with st.sidebar:
     for symbol in st.session_state.watchlist:
         if st.button(f"📌 {symbol}"):
             st.session_state.watchlist.remove(symbol)
-            st.experimental_rerun()
+            st.rerun(scope="fragment")
 
 # Default title
 if not search_query:
@@ -65,7 +65,7 @@ if search_query:
     if symbol not in st.session_state.watchlist:
         if st.button("Add to Watchlist"):
             st.session_state.watchlist.append(symbol)
-            st.experimental_rerun()
+            st.rerun(scope="fragment")
 
     # Fetch stock data with selected date range and timeframe
     df, stock_info = get_stock_data(
@@ -129,4 +129,4 @@ if search_query:
 
 # Auto-refresh every 5 minutes
 time.sleep(300)
-st.experimental_rerun()
+st.rerun(scope="app")
