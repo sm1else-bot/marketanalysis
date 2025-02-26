@@ -13,7 +13,16 @@ st.set_page_config(
     page_icon="📈",
     layout="wide"
 )
-
+st.markdown(
+    """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Load custom CSS
 with open("styles/custom.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
