@@ -9,4 +9,4 @@ enableStaticServing = true
 showWarningOnDirectExecution = false
 
 [client]
-toolbarMode = "hidden"  # Hides the three-dot menu
+toolbarMode = "minimal"  # Hides the three-dot menu
