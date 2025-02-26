@@ -20,7 +20,6 @@ st.markdown(
     """
     <style>
     #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
     header {visibility: hidden;}
     </style>
     """,
@@ -138,6 +137,24 @@ if search_query:
 
     else:
         st.error(f"Could not find data for {symbol}. Please check if the symbol is correct and try again.")
+
+footer = """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #0e1117;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <div class="footer">
+        <p>All Rights Reserved, Jessenth Ebenezer 2025 | Powered by Streamlit</p>
+    </div>
+"""
+st.markdown(footer, unsafe_allow_html=True)
 
 # Auto-refresh every 5 minutes
 time.sleep(300)
