@@ -9,10 +9,13 @@ from utils.news_fetcher import get_stock_news
 
 # Page configuration
 st.set_page_config(
-    page_title="Indian Stock Market Analysis",
+    page_title="TLW/UI Stock Market Analysis",
     page_icon="📈",
     layout="wide"
 )
+
+st.markdown("<h1 style='text-align: center;'>Stock Market Analysis - TLW/UI</h1>", unsafe_allow_html=True)
+
 st.markdown(
     """
     <style>
@@ -61,7 +64,7 @@ with st.sidebar:
 
 # Default title
 if not search_query:
-    st.title("Indian Stock Market Analysis")
+    st.title("<-- Search for Stocks")
 
 if search_query:
     symbol = search_query.upper()
